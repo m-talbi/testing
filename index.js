@@ -5,7 +5,10 @@ const stringLength = (text) => {
 
 const reverseString = (text) => text.split("").reverse().join("");
 
-const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+const capitalize = (string) => {
+  if (!/[a-zA-Z]/.test(string[0])) throw new Error("Invalid string!")
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 const calculator = {
   add(x, y) {

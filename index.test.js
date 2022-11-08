@@ -8,8 +8,8 @@ test("Function should return reversed string", () => {
 });
 
 describe("Convert to uppercase", () => {
-  test("First character should be a letter", () => {
-    expect(capitalize("hello")[0]).not.toMatch(/[0-9]/)
+  test("Throw error if first character is not a string", () => {
+    expect(() => capitalize("1ello")).toThrow();
   })
   test("Function should return capitalized string", () => {
     expect(capitalize("hello")).toBe("Hello")
