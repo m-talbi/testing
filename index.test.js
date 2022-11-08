@@ -16,17 +16,50 @@ describe("Convert to uppercase", () => {
   });
 });
 
-describe("Calculator object", () => {
-  test("Add method should return the sum of numbers", () => {
+describe("Calculator Add method", () => {
+  test("10 + 10 should return 20", () => {
     expect(calculator.add(10, 10)).toBe(20)
   });
-  test("substract method should return num1 substracted by num2", () => {
-    expect(calculator.subtract(20, 10)).toBe(10)
+  test("35 + 20 should return 55", () => {
+    expect(calculator.add(35, 20)).toBe(55)
   });
-  test("Multiply method should return num1 times num2", () => {
+  test("7 + 8 should return 15", () => {
+    expect(calculator.add(7, 8)).toBe(15)
+  });
+});
+
+describe("Calculator subtract method", () => {
+  test("10 - 10 should return 0", () => {
+    expect(calculator.subtract(10, 10)).toBe(0)
+  });
+  test("40 - 25 should return 15", () => {
+    expect(calculator.subtract(40, 25)).toBe(15)
+  });
+  test("7 - 11 should return -4", () => {
+    expect(calculator.subtract(7, 11)).toBe(-4)
+  });
+});
+
+describe("Calculator multiply method", () => {
+  test("10 * 10 should return 100", () => {
     expect(calculator.multiply(10, 10)).toBe(100)
   });
-  test("Divide method should return num1 divided by num2", () => {
+  test("4 * 6 should return 24", () => {
+    expect(calculator.multiply(4, 6)).toBe(24)
+  });
+  test("7 * 10 should return 70", () => {
+    expect(calculator.multiply(7, 10)).toBe(70)
+  });
+});
+
+describe("Calculator divide method", () => {
+  test("100 / 10 should return 10", () => {
     expect(calculator.divide(100, 10)).toBe(10)
   });
-})
+  test("12 / 3 should return 4", () => {
+    expect(calculator.divide(12, 3)).toBe(4)
+  });
+  test("15 / 3 should return 5", () => {
+    expect(calculator.divide(15, 3)).toBe(5)
+  });
+});
