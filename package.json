@@ -1,0 +1,20 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "This repository is a tutorial project to learn about testing in software development using jest frameworks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kweeka1/testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kweeka1/testing/issues"
+  },
+  "homepage": "https://github.com/Kweeka1/testing#readme"
+}
